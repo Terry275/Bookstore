@@ -1,0 +1,177 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Huynh Nguyen Thien Minh
+  ID: S3978742
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Bookstore</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/Bookstore/assets/images/favicon.ico">
+        <link rel="stylesheet" href="/Bookstore/styles.css" type="text/css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="content">
+          <header>
+            <nav>
+              <div class="logo"><div class="mobile-nav-icon"><img src="/Bookstore/assets/images/79163-200.png" height="125"></div>
+                <a href="/Bookstore/"><img src="/Bookstore/assets/images/79163-200.png" alt="Bookstore icon" height="125"></a>
+              </div>
+              <div>
+                <h1 id="nav_menu">
+                  <div class="dropdown">
+                    <div>☰</div>
+                    <ul class="dropdown-options">
+                      <a class="hidden_nav_menu" href="/Bookstore/">Home</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/fiction/">Fiction</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/society_and_cultures/">Society & Culture</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/contact/">Contact Us</a>
+                    </ul>
+                  </div>
+                  <div class="nav_box"><a href="/Bookstore/">Home</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/fiction/">Fiction</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/society_and_cultures/">Society & Culture</a></div>
+                  <div class="nav_box"><a href="/Bookstore/contact/">Contact Us</a></div>
+                </h1>
+              </div>
+            </nav>
+          </header>
+          <br>
+          <main>
+            <table class="booktable" id="history">
+                <tbody>
+                  <th><a href="/Bookstore/categories/society_and_cultures/#history"><h2>History</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/History_of_Britain.jpg" alt="history of britain cover" height="380px">
+                        <h4>The History Of Britain And Ireland</h4>
+                        <p>R. G. Grant</p>
+                        <p>$23.59</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Saint_Joan.jpg" alt="saint joan cover" height="380px">
+                        <h4>Saint Joan</h4>
+                        <p>George Bernard Shaw</p>
+                        <p>$8.99</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/plauge_of_justinian.jpg" alt="justinian cover" width="250px" height="380px">
+                        <h4>Justinian's Flea: Plague, Empire, and the Birth of Europe</h4>
+                        <p>William Rosen</p>
+                        <p>$14.99</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Alexander.jpg" alt="Alexander cover" height="380px">
+                        <h4>The Age of Alexander</h4>
+                        <p>Plutarch</p>
+                        <p>$9.59</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/society_and_cultures/#history"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="booktable" id="politics">
+                <tbody>
+                  <th><a href="/Bookstore/categories/society_and_cultures/#politics"><h2>Politics and Current Affairs</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/American_Empire.jpg" alt="American cover" height="380px">
+                        <h4>The History Of American Empire</h4>
+                        <p>A. G. Hopkins</p>
+                        <p>$15.59</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Trump_effect.jpg" alt="trump cover" height="380px">
+                        <h4>The Trump Effect: Disruption and Its Consequences in US Politics and Government</h4>
+                        <p>Steven E. Schier</p>
+                        <p>$25.59</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/how-to-hide-an-empire.jpg" alt="hidden empire cover" height="380px">
+                        <h4>How To Hide An Empire: A History Of The Greater United States</h4>
+                        <p>Daniel Immerwahr</p>
+                        <p>$12.99</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Cuba_Nuke.jpg" alt="cuba nukes stuff cover" height="380px">
+                        <h4>The History Of Cuban Missle Crisis</h4>
+                        <p>Serhii Plokhy</p>
+                        <p>$12.99</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/society_and_cultures/#politics"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="booktable" id="finance">
+                <tbody>
+                  <th><a href="/Bookstore/categories/society_and_cultures/#finance"><h2>Finance</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Dirty_money.jpg" alt="money cover" height="380px">
+                        <h4>Kleptopia: How Dirty Money Conquering the World</h4>
+                        <p>Tom Burgis</p>
+                        <p>$12.99</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Building_wealth_with_stock.jpg" alt="stock cover" height="380px">
+                        <h4>Building Wealth In The Stock Market</h4>
+                        <p>Colin Nicholson</p>
+                        <p>$13.59</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/Crypto_newbie.jpg" alt="crypto cover" height="380px">
+                        <h4>Cryptocurrency 101: A Beginner Guide</h4>
+                        <p>Patt Tomas</p>
+                        <p>$7.99</p>
+                      </div>
+                      <div class=" bookcover">
+                        <img src="/Bookstore/assets/books/covers/crypto_beginner.jpg" alt="crypto cover" height="380px">
+                        <h4>An Introduction to Cryptocurrencies: The Crypto Market Ecosystem</h4>
+                        <p>Nikos Daskalakis, Panagiotis Georgitseas</p>
+                        <p>$11.59</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/society_and_cultures/#finance"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </main>
+        </div>
+        <br>
+        <footer>
+          <nav class="footer_nav">
+            <div><a href="#">About us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms</a></div>
+            <div><a href="#">Copyright</a></div>
+            <div><a href="/Bookstore/contact/">Contact Us</a></div>
+          </nav>
+          <p>Copyright © 2023 Terry275. All rights reserved.</p>
+        </footer>
+      </div>
+    </body>
+</html>

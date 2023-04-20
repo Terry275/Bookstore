@@ -1,0 +1,177 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Huynh Nguyen Thien Minh
+  ID: S3978742
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Bookstore</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/Bookstore/assets/images/favicon.ico">
+        <link rel="stylesheet" href="/Bookstore/styles.css" type="text/css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="content">
+          <header>
+            <nav>
+              <div class="logo"><div class="mobile-nav-icon"><img src="/Bookstore/assets/images/79163-200.png" height="125"></div>
+                <a href="/Bookstore/"><img src="/Bookstore/assets/images/79163-200.png" alt="Bookstore icon" height="125"></a>
+              </div>
+              <div>
+                <h1 id="nav_menu">
+                  <div class="dropdown">
+                    <div>☰</div>
+                    <ul class="dropdown-options">
+                      <a class="hidden_nav_menu" href="/Bookstore/">Home</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/fiction/">Fiction</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/society_and_cultures/">Society & Culture</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/contact/">Contact Us</a>
+                    </ul>
+                  </div>
+                  <div class="nav_box"><a href="/Bookstore/">Home</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/fiction/">Fiction</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/society_and_cultures/">Society & Culture</a></div>
+                  <div class="nav_box"><a href="/Bookstore/contact/">Contact Us</a></div>
+                </h1>
+              </div>
+            </nav>
+          </header>
+          <br>
+          <main>
+            <table class="booktable" id="horror">
+                <tbody>
+                  <th><a href="/Bookstore/categories/fiction/#horror"><h2>Horror</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/The_Dunwich_Horror.jpg" alt="Dunwich cover" height="380px">
+                        <h4>The Dunwich horror</h4>
+                        <p>H. P. Lovecraft</p>
+                        <p>$12.59</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/Necronomicon.jpg" alt="Necronomicon cover" height="380px">
+                        <h4>Necronomicon</h4>
+                        <p>H. P. Lovecraft</p>
+                        <p>$12.59</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/The_king_in_yellow.jpg" alt="The_king_in_yellow cover" height="380px">
+                        <h4>The King In Yellow</h4>
+                        <p>Robert W. Chambers</p>
+                        <p>$12.59</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/Cats_of_Ulthar.jpg" alt="Cats_of_Ulthar cover" height="380px">
+                        <h4>The Cats Of Ulthar</h4>
+                        <p>H. P. Lovecraft</p>
+                        <p>$15.59</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/fiction/#horror"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="booktable" id="sci-fi">
+                <tbody>
+                  <th><a href="/Bookstore/categories/fiction/#sci-fi"><h2>Sci-Fi</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/Three_body_problem.jpg" alt="Three body problem cover" height="380px">
+                        <h4>The Three-Body Problem</h4>
+                        <p>Cixin Liu</p>
+                        <p>$10.59</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/I_Have_No_Mouth_and_I_Must_Scream.jpg" alt="I Have No Mouth and I Must Scream cover" height="380px">
+                        <h4>I Have No Mouth and I Must Scream</h4>
+                        <p>Harlan Ellison</p>
+                        <p>$10.99</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/the_history_of_gallifrey.jpg" alt="History of Gallifrey cover" height="380px">
+                        <h4>Doctor Who: History of Time Lords</h4>
+                        <p>Steve Tribe</p>
+                        <p>$8.99</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/children-of-time.jpg" alt="Children of Time cover" height="380px">
+                        <h4>Children Of Time</h4>
+                        <p>Adrian Tchaikovsky</p>
+                        <p>$12.59</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/fiction/#sci-fi"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="booktable" id="mystery">
+                <tbody>
+                  <th><a href="/Bookstore/categories/fiction/#mystery"><h2>Mystery</h2></a>
+                  </th>
+                  <tr>
+                    <td class="booksection">
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/extraordinary_sherlock.jpg" alt="sherlock cover" height="380px">
+                        <h4>The Extraordinary Cases Of Sherlock Holmes</h4>
+                        <p>Arthur Conan Doyle</p>
+                        <p>$15.59</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/Murder_on_the_orient_express.jpg" alt="orient express cover" height="380px">
+                        <h4>Murder On The Orient Express</h4>
+                        <p>Agatha Christie</p>
+                        <p>$17.99</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/song_of_the_dead.jpg" alt="song of the dead cover" height="380px">
+                        <h4>Song Of The Dead</h4>
+                        <p>Douglas Lindsay</p>
+                        <p>$15.99</p>
+                      </div>
+                      <div class="bookcover">
+                        <img src="/Bookstore/assets/books/covers/silent_patient.jpg" alt="silent patient cover" height="380px">
+                        <h4>The Silent Patient</h4>
+                        <p>Alex Michaelides</p>
+                        <p>$11.59</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="/Bookstore/categories/fiction/#mystery"><h3>See More</h3></a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </main>
+        </div>
+        <br>
+        <footer>
+          <nav class="footer_nav">
+            <div><a href="#">About us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms</a></div>
+            <div><a href="#">Copyright</a></div>
+            <div><a href="/Bookstore/contact/">Contact Us</a></div>
+          </nav>
+          <p>Copyright © 2023 Terry275. All rights reserved.</p>
+        </footer>
+      </div>
+    </body>
+</html>
