@@ -1,4 +1,5 @@
-/*RMIT University Vietnam
+/*
+RMIT University Vietnam
 Course: COSC2430 Web Programming
 Semester: 2023A
 Assessment: Assignment 1
@@ -18,7 +19,7 @@ Acknowledgement:
 * {
   font-family: Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-  
+ 
 a {
   text-decoration: none;
 }
@@ -64,9 +65,14 @@ h3:hover {
 .bookproduct img:hover {
   color: white;
   box-shadow: 0 5px 15px orangered;
+  transform: scale(1.1);
 } 
+.bookproduct img {
+  transition: 0.5s;
+}
 
-/* Create a container for all the contents inside*/
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -143,8 +149,8 @@ nav .logo {
 .booksection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  min-width: 500px;
+  justify-content: center;
+  min-width: 398px;
   
 }
 
@@ -173,7 +179,11 @@ nav .logo {
 .bookcover img:hover {
   color: white;
   box-shadow: 0 5px 15px orangered;
+  transform: scale(1.1);
 } 
+.bookcover img {
+  transition: 0.5s;
+}
 
 .bookcover {
   box-sizing: border-box;
@@ -181,6 +191,7 @@ nav .logo {
   margin-right: 10px;
   margin-bottom: 10px;
   padding:10px;
+  
 }
 
 .bookcover p {
@@ -316,20 +327,27 @@ footer {
   margin: 10px;
   display: flex;
   flex-direction: column;
+
   
 }
 .product_images_preview img {
   margin:10px;
+  
+  
 }
 .product_images_preview img:hover {
 color: white;
 box-shadow: 0 0px 10px orangered;
+transform: scale(1.1);
+transition: 0.3s;
+
 }
 
 .product_description {
   margin:50px;
   
 }
+
 
 .product_description_title {
   font-size: 30px;
@@ -361,17 +379,27 @@ box-shadow: 0 0px 10px orangered;
   font-size: 24px;
   display: flex;
   margin-left: 15px;
+  
 }
+.add_to_cart p{
+  transition: 0.5s;
+}
+
+.add_to_cart p:hover {
+  background-color: grey;
+  color: black;
+}
+
+
 .add_to_cart p {
   margin-right: 40px;
   border-spacing: 20px;
   border-radius: 12px;
   padding:15px;
   background-color:#4CAF50;
-  color: white
+  color: white;
+  display: block;
 }
-
-
 
 .purchase_hidden {
   display: none;
@@ -420,6 +448,10 @@ box-shadow: 0 0px 10px orangered;
   .product_description_title {
     font-size: 25px;
     padding: 0px;
+  }
+  .bookproduct img {
+    width: 182px; 
+    height: 275px;
   }
 
 }
@@ -529,8 +561,7 @@ box-shadow: 0 0px 10px orangered;
 
   .product_images_preview img {
     margin:10px;
-}
-
+  }
 
   .purchase_hidden {
     display: block;
@@ -581,4 +612,65 @@ box-shadow: 0 0px 10px orangered;
   footer {
     font-size: 18px; 
   }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin:0px;
+  }
+
+  .mobile-nav-icon img {
+    height: 75px;
+  }
+  nav a img {
+    height: 75px;;
+  }
+  #nav_menu {
+    margin: 0px;
+  }
+  .booktable {
+    border-spacing: 5px;;
+  }
+  .h2 {
+    padding: 5px;
+  }
+
+  .bookproduct img {
+    width: 100px; 
+    height: 150px;
+  }
+  .bookcover img {
+    width: 100px; 
+    height: 150px;
+  }
+
+  .bookproduct {
+    width: 40%;
+    padding: 0px;
+  }
+
+  img {
+    overflow:auto;
+  }
+
+  iframe {
+    width: 356px;
+    height: 200px;
+  }
+  .footer_nav a{
+    padding:5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+
+  .product_description {
+    margin-left: 10px;
+    margin: 15px;
+  }
+  .booksection {
+    justify-content: flex-start;
+  }
+
 }
