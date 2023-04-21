@@ -4,21 +4,29 @@ Semester: 2023A
 Assessment: Assignment 1
 Author: Huynh Nguyen Thien Minh
 ID: S3978742
-Acknowledgement: Acknowledge the resources that you use here.
+Acknowledgement:
+    Flavicon: 
+      https://www.favicon.cc/
+    Website logo:
+      https://app.logo.com/
+    Book materials:
+      https://books.google.com/
+      https://www.amazon.com/history-books/s?k=history+books
+      https://www.goodreads.com/
 */
 
 * {
-  font-family: monospace, Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
 a {
   text-decoration: none;
 }
 a:link {
-  color:bisque;
+  color:white;
 }
 a:visited {
-  color:bisque;
+  color:white;
 }
 a:hover {
   color:orange;
@@ -45,7 +53,7 @@ h4 {
   font-size: 24px;
 }
 
-h2:hover {
+.booktable h2:hover {
   color: orange;
 }
 
@@ -68,7 +76,7 @@ h3:hover {
   
   
 header {
-  background-color: #1f0f53;
+  background-color: #3a98b9;
   border-radius: 20px;
 }
 nav {
@@ -131,6 +139,7 @@ nav .logo {
   border-radius: 20px;
   margin-top: 20px;
 }
+
 .booksection {
   display: flex;
   flex-wrap: wrap;
@@ -146,12 +155,19 @@ nav .logo {
   margin-bottom: 10px;
   padding:10px;
 
-
 }
 
 .bookproduct p {
   margin:12px;
   font-size: 20px;
+}
+
+.bookproduct a:hover {
+  color:black;
+}
+
+.bookproduct a {
+  color: black;
 }
 
 .bookcover img:hover {
@@ -174,7 +190,7 @@ nav .logo {
 
 
 footer {
-  background-color:#1f0f53;
+  background-color:#3a98b9;
   text-align: center;
   padding: 5px;
   border-spacing: 0px;
@@ -183,7 +199,9 @@ footer {
   font-size: 24px;
 
 }
-
+.copyright {
+  font-size: 14px;
+}
 .footer_nav {
   display: flex;
   justify-content: space-between;
@@ -194,7 +212,16 @@ footer {
   margin-right: 20px;
 }
 
+#breadcrumb a:link {
+  color: black;
+}
 
+#breadcrumb a:visited {
+  color: black;
+}
+#breadcrumb a:hover {
+  color: orange;
+}
 
 
 
@@ -230,11 +257,124 @@ footer {
 }
 
 
-.hidden_nav_menu:visited{
+.hidden_nav_menu:visited {
   color: #1f0f53;
 }
-.hidden_nav_menu:hover{
+
+.hidden_nav_menu:hover {
   color:orange;
+}
+
+.hidden_nav_menu:link {
+  color:#1f0f53;
+}
+.hidden_nav_menu {
+  display: block;
+  padding-right:20px
+}
+
+#videos_embedded {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:20px;
+}
+
+/*Book detail pages*/
+
+.product {
+  background-color:bisque;
+  text-align: left;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 18px;
+  border-collapse: separate;
+  border-spacing: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.product_content {
+  display: flex;
+  justify-content: space-between;
+  text-align:justify;
+  align-items:start;
+  
+}
+
+.product_images_items{
+  padding: 30px;
+  padding-left: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product_images_preview{
+  padding:10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.product_images_preview img {
+  margin:10px;
+}
+.product_images_preview img:hover {
+color: white;
+box-shadow: 0 0px 10px orangered;
+}
+
+.product_description {
+  margin:50px;
+  
+}
+
+.product_description_title {
+  font-size: 30px;
+  padding: 0px;
+}
+
+.author span {
+  color:darkblue
+}
+.price {
+  font-size: 42px;
+  color: crimson;
+}
+
+.checked {
+  color:orange;
+}
+
+.rating {
+  font-size: 24px;
+}
+
+.price {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.add_to_cart {
+  font-size: 24px;
+  display: flex;
+  margin-left: 15px;
+}
+.add_to_cart p {
+  margin-right: 40px;
+  border-spacing: 20px;
+  border-radius: 12px;
+  padding:15px;
+  background-color:#4CAF50;
+  color: white
+}
+
+
+
+.purchase_hidden {
+  display: none;
 }
 
 
@@ -251,6 +391,37 @@ footer {
     margin-right: 10px;
     font-size: 30px;
   }
+
+  .rating {
+    font-size: 22px;
+  }
+  .price {
+    font-size: 35px;
+  }
+  
+  .add_to_cart {
+    padding: 7px;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  
+  .add_to_cart p {
+    margin-right: 10px;
+  
+  }
+  .product {
+    font-size: 17px;
+  }
+
+  .product_description{
+    margin-left: 0px;
+  }
+
+  .product_description_title {
+    font-size: 25px;
+    padding: 0px;
+  }
+
 }
 
 
@@ -272,7 +443,6 @@ footer {
   }
 
 
-
   h2 {
     font-size: 40px;
   }
@@ -281,6 +451,44 @@ footer {
     font-size: 20px;
   }
 
+  /*book detail pages*/
+  .product_description_title {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .product_description{
+    margin-left: 0px;
+    
+  }
+
+  .product_images_items{
+    padding: 10px;
+    padding-left: 20px;
+    margin: 20px;
+  }
+
+  .product {
+    font-size: 16px;
+  }
+
+  .rating {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 35px;
+  }
+  
+  .add_to_cart {
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .add_to_cart p {
+    margin-right: 10px;
+  
+  }
+  
 }
 @media only screen and (max-width: 960px){
   .bookproduct {
@@ -299,6 +507,60 @@ footer {
   .bookcover img {
     height: 300px;
   }
+
+/*book detail pages*/
+  .product_images_items{
+  padding: 10px;
+  padding-left: 20px;
+  margin: 20px;
+  display: block;
+  text-align: center;
+
+  }
+
+  .product_images_preview{
+  padding:10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+
+  
+  }
+
+  .product_images_preview img {
+    margin:10px;
+}
+
+
+  .purchase_hidden {
+    display: block;
+    font-size: 18px;
+  }
+
+  .purchase {
+    display:none;
+  }
+  .purchase_hidden .add_to_cart p {
+    padding:7px;
+  }
+
+  .purchase_hidden .price {
+    font-size: 27px;
+  }
+
+  .product_content {
+    justify-content: center;
+    text-align:justify;
+    align-items:center;
+    
+    flex-direction: column;
+    
+  }
+  .product_description{
+    margin-left: 50px;
+    
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -314,7 +576,7 @@ footer {
     font-size: 25px;
   }
   p {
-    font-size: 16px ;
+    font-size: 16px;
   }
   footer {
     font-size: 18px; 
