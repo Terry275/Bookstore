@@ -1,5 +1,4 @@
-/*
-RMIT University Vietnam
+/*RMIT University Vietnam
 Course: COSC2430 Web Programming
 Semester: 2023A
 Assessment: Assignment 1
@@ -12,14 +11,14 @@ Acknowledgement:
       https://app.logo.com/
     Book materials:
       https://books.google.com/
-      https://www.amazon.com/history-books/s?k=history+books
+      https://www.amazon.com/ 
       https://www.goodreads.com/
 */
 
 * {
   font-family: Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
- 
+  
 a {
   text-decoration: none;
 }
@@ -199,6 +198,12 @@ nav .logo {
   font-size: 20px;
 }
 
+.bookcover a:hover {
+  color:black;
+}
+.bookcover a {
+  color: black;;
+}
 
 footer {
   background-color:#3a98b9;
@@ -365,6 +370,9 @@ transition: 0.3s;
 .checked {
   color:orange;
 }
+.fa-star-o {
+  color: orange
+}
 
 .rating {
   font-size: 24px;
@@ -375,6 +383,14 @@ transition: 0.3s;
   justify-content: flex-start;
   align-items: center;
 }
+
+
+.purchase_hidden .price {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .add_to_cart {
   font-size: 24px;
   display: flex;
@@ -391,6 +407,12 @@ transition: 0.3s;
 }
 
 
+
+
+/* Add animation when point on the green button */
+
+
+
 .add_to_cart p {
   margin-right: 40px;
   border-spacing: 20px;
@@ -401,10 +423,14 @@ transition: 0.3s;
   display: block;
 }
 
+
+
 .purchase_hidden {
   display: none;
 }
-
+#copyright {
+  color:#16161d
+}
 
 @media only screen and (max-width: 1279px) {
   .bookproduct {
@@ -561,7 +587,8 @@ transition: 0.3s;
 
   .product_images_preview img {
     margin:10px;
-  }
+}
+
 
   .purchase_hidden {
     display: block;
@@ -649,6 +676,7 @@ transition: 0.3s;
     width: 40%;
     padding: 0px;
   }
+
 
   img {
     overflow:auto;
