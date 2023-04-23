@@ -1,15 +1,156 @@
-<!--  RMIT University Vietnam
+<!--
+  RMIT University Vietnam
   Course: COSC2430 Web Programming
   Semester: 2023A
   Assessment: Assignment 1
   Author: Huynh Nguyen Thien Minh
   ID: S3978742
-  Acknowledgement: Acknowledge the resources that you use here.
+  Acknowledgement:
+    HTML/CSS additional resources:
+      https://www.w3schools.com
+    Flavicon: 
+      https://www.favicon.cc/
+    Website logo:
+      https://app.logo.com/
+    Book materials:
+      https://books.google.com/
+      https://www.amazon.com/
+      https://www.goodreads.com/
+      https://www.penguin.com.au/books/
 -->
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/Bookstore/assets/images/favicon.ico">
+        <link rel="stylesheet" href="/Bookstore/styles.css" type="text/css">
+    </head>
     <body>
-        <p>testing</p>
+      <div class="container">
+        <div class="content">
+          <header>
+            <nav>
+              <div class="logo"><div class="mobile-nav-icon"><img src="/Bookstore/assets/images/logo.jpg" height="125px"></div>
+                <a href="/Bookstore/"><img src="/Bookstore/assets/images/logo.jpg" alt="Bookstore icon" height="125px"></a>
+              </div>
+              <div>
+                <h1 id="nav_menu">
+                  <div class="dropdown">
+                    <div>☰</div>
+                    <ul class="dropdown-options">
+                      <a class="hidden_nav_menu" href="/Bookstore/">Home</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/fiction/">Fiction</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/categories/society_and_cultures/">Society & Culture</a>
+                      <a class="hidden_nav_menu" href="/Bookstore/contact/">Contact Us</a>
+                    </ul>
+                  </div>
+                  <div class="nav_box"><a href="/Bookstore/">Home</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/fiction/">Fiction</a></div>
+                  <div class="nav_box"><a href="/Bookstore/categories/society_and_cultures/">Society & Culture</a></div>
+                  <div class="nav_box"><a href="/Bookstore/contact/">Contact Us</a></div>
+                </h1>
+              </div>
+            </nav>
+          </header>
+          <br>
+          <main class="booktable">
+            <div class="title">
+              <h2>Contact Us</h2>
+              <p>Feel free to leave us a message</p>
+            </div>
+            <div class="contact_box">
+               <form>
+                <div class="contact_form">
+
+                  <div class="input_box purpose">
+                    <label for="purpose">Contact purpose: </label>
+                    <select class="purpose_box" name="purpose" id="purpose" required>
+                      <option value="">
+                        --Choose a contact purpose--
+                      </option>
+                      <option value="sell-books">
+                        I want to sell books
+                      </option>
+                      <option value="buy-books">
+                        I want to buy books
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="input_box name">
+                    <label>Enter your name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your name here" required/>
+                  </div>
+
+                  <div class="input_box email">
+                    <label>Enter your email: </label>
+                    <input type="email" name="email" id="email" placeholder="Your email here" required/>
+                  </div>
+
+                  <div class="input_box phone">
+                    <label>Enter your phone number: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Your phone number here" required/>
+                  </div>
+
+                  <div class="input_box contact_pref">
+                    <label>Contact preference: </label>
+                    <div class="checkbox_option">
+                      <div><input type="checkbox" class="checkbox" name="pref" id="pref" required/>By email</div>
+                      <div><input type="checkbox" class="checkbox" name="pref" id="pref" required/>By phone</div>
+                    </div>
+                  </div>
+
+                  <div class="input_box newsletter">
+                    <label>Do you want to receive weekly newsletter?</label>
+                    <div class="checkbox_option">
+                      <div><input type="radio" class="checkbox" name="news" id="news" checked required/>Yes</div>
+                      <div><input type="radio" class="checkbox" name="news" id="news" required/>No</div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="input_box message">
+                    <label>Enter your message: </label>
+                    <textarea name="message" id="message" cols="40" rows="5" placeholder="Your message here" required></textarea>
+                  </div>
+
+                  <div class="input_box submit">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                  </div>
+              </form>
+            </div>
+            <section class="contact_info">
+              <h3>Contact Info</h3>
+              <div>
+                <a href="mailto:s3978742@rmit.edu.vn"><img src="/Bookstore/assets/images/gmail-new-2020-logo-32DBE11BB4-seeklogo.com.png" alt="Email_icon" height="15px"> s3978742@rmit.edu.vn</a>
+              </div>
+              <div>
+                <a href="tel:02837761306"><img src="/Bookstore/assets/images/Phone_icon.png" alt="Phone_icon" height="18px"> 02837761306</a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/RMITUniversityVietnam/"><img src="/Bookstore/assets/images/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" alt="facebook_logo" height="18px"> Facebook</a>
+              </div>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0717237054464!2d106.6931917743239!3d10.72895148941693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1682237586424!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+             </section>
+          </main>
+        </div>
+        <br>
+        <footer>
+          <nav class="footer_nav">
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms</a></div>
+            <div><a href="#">Copyright</a></div>
+            <div><a href="/Bookstore/contact/">Contact Us</a></div>
+          </nav>
+          <p id="copyright">Copyright © 2023 Terry275. All rights reserved.</p>
+        </footer>
+      </div>
     </body>
 </html>
