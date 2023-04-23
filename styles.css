@@ -409,7 +409,6 @@ transition: 0.3s;
 
 
 
-/* Add animation when point on the green button */
 
 
 
@@ -432,6 +431,117 @@ transition: 0.3s;
   color:#16161d
 }
 
+
+/* contact us page */
+#form_title {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.title h2 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+  font-size: 35px;
+}
+.title p {
+  margin: 5px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+}
+.input_box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.input_box input {
+  padding:10px;
+  font-size: 18px;
+}
+.purpose_box {
+  padding:10px;
+  font-size: 18px;
+}
+.contact_form {
+  width: 600px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.checkbox_option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.contact_form {
+  text-align: start;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.submit input {
+  margin-bottom: 20px;
+  margin-right: 30px;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  transition: 0.5s;
+}
+.submit input:hover {
+  background-color: grey;
+  color: black;
+}
+.message textarea {
+  font-size: 16px;
+}
+.contact_info a {
+  color:black;
+  vertical-align: baseline;
+}
+.contact_info a img {
+  padding-right: 10px;
+}
+.contact_info div {
+  margin:10px;
+}
+.contact_info h3 {
+  margin: 10px;
+}
+.contact_info h3:hover {
+  color:black
+}
+.contact_box {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  margin:50px;
+
+}
+
+.contact_info {
+  margin:20px;
+  padding-right: 40px;
+}
 @media only screen and (max-width: 1279px) {
   .bookproduct {
     width: 25%;
@@ -480,6 +590,18 @@ transition: 0.3s;
     height: 275px;
   }
 
+  .contact_box {
+    margin:30px;
+  
+  }
+
+  .contact_form {
+    width: 500px;
+  }
+
+
+
+
 }
 
 
@@ -490,14 +612,8 @@ transition: 0.3s;
     
   }
 
-  .dropdown {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
   .nav_box {
-    display: none;
+    font-size: 25px;
   }
 
 
@@ -546,6 +662,16 @@ transition: 0.3s;
     margin-right: 10px;
   
   }
+
+
+  .contact_form {
+    width: 350px;
+    margin: 15px;
+  }
+
+
+
+
   
 }
 @media only screen and (max-width: 960px){
@@ -565,6 +691,11 @@ transition: 0.3s;
   .bookcover img {
     height: 300px;
   }
+  .nav_box {
+    margin-right: 0px;
+    font-size: 20px;
+  }
+
 
 /*book detail pages*/
   .product_images_items{
@@ -618,6 +749,10 @@ transition: 0.3s;
     margin-left: 50px;
     
   }
+  .contact_box {
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
 
@@ -639,6 +774,17 @@ transition: 0.3s;
   footer {
     font-size: 18px; 
   }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .nav_box {
+    display: none;
+  }
+
 }
 
 
